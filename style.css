@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(241, 126, 232);
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+}
+
+.signup__form {
+  /* border: 2px solid red; */
+  position: absolute;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  top: 100px;
+  left: 400px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.4) 6px 7px 29px 0px;
+}
+
+.signup__head {
+  text-align: center;
+}
+
+#signup {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 500px;
+  justify-content: center;
+}
+
+.form__attributes {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2px auto;
+}
+
+.form__attributes input {
+  display: block;
+  margin-right: 20px;
+  width: 400px;
+  padding: 6px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: green;
+  font-weight: 600;
+  font-size: 18px;
+  width: 40%;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+}
