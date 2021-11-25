@@ -12,45 +12,66 @@
 </head>
 
 <body>
+    <!-- Text Effect on Top -->
+    <h1 class="aboutme">
+        <a href="" class="typewrite" data-period="2000"
+            data-type='["Hi, I am Mishra Vaibhav","I am a Web Developer", "This is my SignUp Form Internship Task"]'>
+            <span class="wrap"></span>
+        </a>
+    </h1>
+
+    <!-- SignUp Form -->
     <div class="form">
         <div class="signup__form">
             <h1 class="signup__head">Sign Up</h1>
             <form id="signup">
                 <div class="form__attributes">
                     <label for="name">Name
-                        <input id="name" type="text" placeholder="Enter your name">
+                        <input name="name" id="name" type="text" placeholder="Enter your name" required>
                     </label>
                 </div>
                 <div class="form__attributes">
                     <label for="email">Email
-                        <input id="email" type="email" placeholder="Enter your email">
+                        <input name="email" id="email" type="email" placeholder="Enter your email" required>
                     </label>
                 </div>
                 <div class="form__attributes">
                     <label for="contact">Contact (optional)
-                        <input id="contact" type="number" placeholder="Enter your number">
+                        <input name="contact" id="contact" type="tel" placeholder="Enter your number">
                     </label>
                 </div>
                 <div class="form__attributes">
                     <label for="password">Password
-                        <input id="password" type="password" placeholder="Enter your password">
+                        <input name="password" id="password" type="password" placeholder="Enter your password" required>
                     </label>
                 </div>
                 <div class="form__attributes">
                     <label for="cpassword">Confirm Password
-                        <input id="cpassword" type="password" placeholder="Enter your confirm password">
+                        <input name="cpassword" id="cpassword" type="password" placeholder="Enter your confirm password"
+                            required>
                     </label>
                 </div>
 
-                <button type="submit" class="btn">Sign Up</button>
+                <button id="submitBtn" type="button" class="btn" onclick="onSubmitForm()">Sign Up</button>
+
             </form>
         </div>
+
+        <!-- Password Message -->
+        <div id="message">
+            <h3>Password must contain</h3>
+            <p id="letter" class="invalid">A <b>Lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>Capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>Number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+
     </div>
 
 
 
-    <!-- Write your JS here -->
-    <script src="./main.js"></script>
+    <!-- Javascript -->
+    <script src="main.js"></script>
 </body>
 
 </html>
